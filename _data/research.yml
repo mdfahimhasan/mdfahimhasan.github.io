@@ -1,0 +1,53 @@
+# ─────────────────────────────────────────────────────────────
+#  RESEARCH THEMES  (shown in the "Research" section)
+#  Each theme starts with "- title:". Copy a whole block to add one.
+#
+#  Optional lines (delete any you don't need):
+#    image:   a picture in assets/img/research/  -> shown large, with the text beside it
+#    caption: one line under the picture
+#    links:   buttons under the text (paper, code, data...)
+#  Themes WITHOUT an image are shown as a compact list after the others.
+# ─────────────────────────────────────────────────────────────
+
+- title: "How much rain (effective precipitation) do irrigated crops actually use?"
+  where: "17 western U.S. states, 2000–2020"
+  summary: "A physics-constrained machine learning model that estimates effective precipitation, the part of rainfall crops actually use, over irrigated cropland at about 2 km resolution. Separating rain from irrigation is the first step to knowing how much water farms pump."
+  image: "effective-precipitation.jpg"
+  caption: "Monthly effective precipitation (left) summed into growing-season totals (right), available in Google Earth Engine."
+  links:
+    - label: "Paper"
+      url: "https://doi.org/10.1016/j.agwat.2025.109821"
+    - label: "Code"
+      url: "https://github.com/mdfahimhasan/WestUS_Peff"
+
+- title: "Estimating groundwater pumping beyond metered basins"
+  where: "Eight states across the Southwest and High Plains, 2000–2023"
+  summary: "A machine learning model trained on scarce metered pumping records from Arizona, Colorado, Kansas and Nevada, using satellite evapotranspiration and my effective precipitation estimates. It maps annual groundwater pumping and irrigation at about 2 km, and holds up reasonably well in some basins it never saw during training. Where it falls short, we explore the underlying reasons and limitations."
+  image: "groundwater-pumping-2023.jpg"
+  caption: "Estimated irrigation across the study area in 2023 (mm)."
+  links:
+    - label: "Code"
+      url: "https://github.com/mdfahimhasan/WestUS_pumping"
+    - label: "Related study: Mississippi Alluvial Plain"
+      url: "https://doi.org/10.1016/j.ejrh.2024.101674"
+
+- title: "How does irrigation respond to climate?"
+  where: "580 irrigated watersheds in the western U.S., 1986–2019"
+  summary: "A panel regression of satellite- and model-derived irrigation water use shows how irrigation rises and falls with precipitation and temperature anomalies."
+  image: "irrigation-climate-sensitivity.jpg"
+  caption: "Irrigation water use response to precipitation (blue) and temperature (orange) anomalies: historical 1986–2019 (top) and projected 2050–2074 under SSP2-4.5 (bottom)."
+
+- title: "Crop water use at the field scale"
+  where: "Satellite and drone remote sensing"
+  summary: "I build physics-based energy balance models that estimate crop water use (evapotranspiration) field by field from satellite and drone imagery, and pair them with in-field sensors to measure how efficiently crops use water."
+
+- title: "Where the ground is sinking, and aquifers with it"
+  where: "Global"
+  summary: "A global land subsidence map built from InSAR and other satellite data with machine learning, showing widespread and largely permanent loss of aquifer storage capacity from groundwater extraction."
+  links:
+    - label: "Paper"
+      url: "https://doi.org/10.1038/s41467-023-41933-z"
+    - label: "Data"
+      url: "https://doi.org/10.4211/hs.dc7c5bfb3a86479b889d3b30ab0e4ef7"
+    - label: "Earth Engine catalog"
+      url: "https://gee-community-catalog.org/projects/land_subsidence/"

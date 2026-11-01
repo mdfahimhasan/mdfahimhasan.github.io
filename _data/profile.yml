@@ -1,0 +1,47 @@
+# ─────────────────────────────────────────────────────────────
+#  YOUR BASIC INFO
+#  Edit the text after each colon. Keep the quotation marks.
+# ─────────────────────────────────────────────────────────────
+
+name: "Md Fahim Hasan"
+
+# How your name appears in author lists (it gets bolded automatically)
+citation_name: "Hasan, M. F."
+
+# Current job, shown under your name at the top of the page
+role: "Agricultural Data Scientist, Syngenta Group"
+
+# The big sentence at the top of the page
+headline: "I measure how farms use water, from satellites down to single fields."
+
+location: "Colorado, USA"
+email: "fahimhasan107@gmail.com"
+
+# Your photo (shown next to your name): put the image in assets/img/ and
+# write its file name here. Leave it as "" to show no photo.
+photo: "fahim-hasan.jpg"
+
+# Your CV: replace the file in assets/files/ (keep the same name),
+# or change the file name here.
+cv: "assets/files/Fahim_Hasan_CV.pdf"
+
+links:
+  scholar: "https://scholar.google.com/citations?user=hcESosQAAAAJ&hl=en"
+  github: "https://github.com/mdfahimhasan"
+  linkedin: "https://www.linkedin.com/in/md-fahim-hasan/"
+
+# Your bio, shown in the "About" section. Blank line = new paragraph.
+bio: |
+  **I'm an agricultural data scientist at Syngenta Group.** I hold a Ph.D. in Civil and Environmental Engineering from Colorado State University, where I worked in the [Remote Sensing Hydrology Group](https://www.remote-sensing-hydrology.com/). I specialize in remote sensing, machine learning and hydrologic modeling for agricultural water.
+
+  My work brings together **satellite data, drone imagery, field sensors and machine learning** to answer practical questions about agricultural water. How **efficiently do crops use water**? How much of it comes from **rain, and how much from irrigation**? How does water use on a **single farm add up across a whole region**? How is agricultural water use **changing with climate and human intervention**? And where are **aquifers permanently losing storage** because of excessive groundwater pumping?
+
+  Before graduate school, I spent three years as a water resources engineer in Bangladesh, working with the Bangladesh Water Development Board, in private consulting, and in research.
+
+# Short list shown next to your bio
+interests:
+  - Remote sensing in agriculture
+  - Remote sensing in hydrology
+  - Physics-informed machine learning for water
+  - Physics-based hydrologic and energy balance modeling
+  - Irrigation, evapotranspiration and groundwater use

@@ -1,0 +1,18 @@
+# ─────────────────────────────────────────────────────────────
+#  EDUCATION  (newest first)
+#  "detail" is optional (e.g. GPA, dissertation title).
+# ─────────────────────────────────────────────────────────────
+
+- degree: "Ph.D., Civil and Environmental Engineering"
+  school: "Colorado State University"
+  years: "2022 – 2026"
+  detail: "GPA 3.98 / 4.0"
+
+- degree: "M.S., Geological Engineering"
+  school: "Missouri University of Science and Technology"
+  years: "2021 – 2022"
+  detail: "GPA 4.0 / 4.0"
+
+- degree: "B.Sc., Civil Engineering"
+  school: "Bangladesh University of Engineering and Technology"
+  years: "2012 – 2017"

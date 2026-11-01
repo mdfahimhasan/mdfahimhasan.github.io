@@ -1,0 +1,60 @@
+# ─────────────────────────────────────────────────────────────
+#  EARLIER WORK  (a small, collapsed timeline near the bottom of
+#  the page; visitors click to open it). Newest first.
+#
+#  Each period has dates, a role, and optional projects.
+#  A project's "image" is a picture in assets/img/earlier/ (optional).
+# ─────────────────────────────────────────────────────────────
+
+- dates: "Oct 2018 – Dec 2020"
+  role: "Assistant Engineer"
+  org: "Bangladesh Water Development Board"
+  summary: "Supervised field operations for water resources projects, supported budget planning, and contributed to the implementation and policy review of the Ganges Water Sharing Treaty."
+
+- dates: "Jul 2018 – Sep 2018"
+  role: "Research Assistant"
+  org: "Bureau of Research, Testing and Consultation, BUET"
+  projects:
+    - title: "Market sounding study for a 40-story commercial complex"
+      description: "Feasibility assessment for the Chittagong Port Authority: real estate market survey, comparison with other port authorities, and environmental, structural and traffic feasibility. Served as liaison between the client and BUET."
+
+- dates: "Aug 2017 – Dec 2017"
+  role: "Environmental Engineer"
+  org: "Streams Tech Ltd."
+  projects:
+    - title: "Hydrodynamic modeling for a bridge project"
+      description: "River hydraulics with and without the bridge, plus sediment transport, scour and morphological change."
+      tools: "HEC-RAS"
+      image: "bridge-hydrodynamics.jpg"
+    - title: "Storm drainage and water supply network design"
+      description: "GIS layout, hydrologic and hydraulic design, and network performance analysis for a major housing project."
+      tools: "SWMM, EPANET, GIS"
+      image: "water-supply-network.jpg"
+
+- dates: "Feb 2017 – Jul 2017"
+  role: "Research Assistant"
+  org: "Center for Environmental and Resource Management (CERM), BUET"
+  projects:
+    - title: "Performance of zero liquid discharge treatment plants in textile industries"
+      description: "Assessed how efficiently textile industries in Bangladesh treat liquid waste, for the Department of Environment."
+
+- dates: "Up to 2018"
+  role: "Student and independent research"
+  org: "Bangladesh University of Engineering and Technology"
+  projects:
+    - title: "Climate change impacts on the Halda River Basin"
+      description: "Modeled how climate change alters streamflow and other hydrologic components of the Halda River, a major fish spawning ground near Chittagong."
+      tools: "SWAT"
+      image: "halda-river.jpg"
+    - title: "Flood inundation and hazard mapping, Harirampur"
+      description: "A coupled 1D/2D model of four embankment scenarios on the Padma River, validated against historic inundation maps, with union-level hazard maps."
+      tools: "HEC-RAS"
+      image: "harirampur-flood.jpg"
+    - title: "Shoreline change of the Ganges River, 1980–2018"
+      description: "Erosion and accretion along about 230 km of the Ganges left bank from Landsat imagery."
+      tools: "Landsat, ArcGIS, DSAS"
+      image: "ganges-shoreline.jpg"
+    - title: "Land use change prediction for Cumilla City"
+      description: "Projected land use to 2030 with Markov chains, multi-criteria evaluation and CA-Markov."
+      tools: "ArcGIS, IDRISI"
+      image: "cumilla-land-use.jpg"

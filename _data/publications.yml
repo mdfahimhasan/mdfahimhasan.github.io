@@ -1,0 +1,44 @@
+# ─────────────────────────────────────────────────────────────
+#  PUBLICATIONS
+#  To add a paper: copy one block under "papers", paste it at the
+#  TOP of the list, and edit it. Your name is bolded automatically.
+#  "press" and "code" are optional; delete those lines if not needed.
+# ─────────────────────────────────────────────────────────────
+
+papers:
+  - title: "Satellite data and physics-constrained machine learning for estimating effective precipitation in the Western United States and application for monitoring groundwater irrigation"
+    authors: "Hasan, M. F., Smith, R. G., Majumdar, S., Huntington, J. L., Alves Meira Neto, A., & Minor, B. A."
+    journal: "Agricultural Water Management"
+    details: "319, 109821"
+    year: 2025
+    url: "https://doi.org/10.1016/j.agwat.2025.109821"
+    code: "https://github.com/mdfahimhasan/WestUS_Peff"
+
+  - title: "Improving crop-specific groundwater use estimation in the Mississippi Alluvial Plain: Implications for integrated remote sensing and machine learning approaches in data-scarce regions"
+    authors: "Majumdar, S., Smith, R., Hasan, M. F., Wilson, J. L., White, V. E., Bristow, E. L., Rigby, J. R., Kress, W., & Painter, J. A."
+    journal: "Journal of Hydrology: Regional Studies"
+    details: "52, 101674"
+    year: 2024
+    url: "https://doi.org/10.1016/j.ejrh.2024.101674"
+
+  - title: "Global land subsidence mapping reveals widespread loss of aquifer storage capacity"
+    authors: "Hasan, M. F., Smith, R., Vajedian, S., Pommerenke, R., & Majumdar, S."
+    journal: "Nature Communications"
+    details: "14, 6180"
+    year: 2023
+    url: "https://doi.org/10.1038/s41467-023-41933-z"
+    press: "https://www.sciencedaily.com/releases/2023/11/231103141438.htm"
+
+# Conference talks and posters (newest first)
+talks:
+  - title: "Satellite data and machine learning-based effective precipitation modeling for the Western United States"
+    event: "AGU Annual Meeting, Washington, DC"
+    year: 2024
+
+  - title: "A data-driven approach for estimating irrigation groundwater use for the Western United States"
+    event: "AGU Fall Meeting, San Francisco, CA"
+    year: 2023
+
+  - title: "Linking subsidence and groundwater storage loss: Investigating drivers and trends using big data"
+    event: "AGU Fall Meeting, Chicago, IL"
+    year: 2022

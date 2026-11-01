@@ -1,0 +1,256 @@
+---
+layout: default
+---
+{% assign p = site.data.profile %}
+{% capture bold_name %}<strong>{{ p.citation_name }}</strong>{% endcapture %}
+
+<a class="skip" href="#about">Skip to content</a>
+
+<nav class="topbar" aria-label="Sections">
+  <div class="topbar-links">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#experience">Experience</a>
+    <a href="#publications">Publications</a>
+    <a href="#code">Code</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="topbar-tools">
+    <span class="topbar-cover">Cover image: <a href="assets/files/linkedin-cover.png" download>Light</a> / <a href="assets/files/linkedin-cover-dark.png" download>Dark</a></span>
+    <button class="theme-toggle" type="button" aria-label="Switch light or dark theme">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7a5 5 0 0 1 0 10z" fill="currentColor"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <canvas class="hero-map" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <div class="hero-id">
+      <h1 class="hero-name">{{ p.name }}</h1>
+      {% if p.photo != "" %}<img class="hero-photo" src="assets/img/{{ p.photo }}" alt="Photo of {{ p.name }}" width="240" height="240">{% endif %}
+    </div>
+    <p class="hero-role">{{ p.role }}</p>
+    <p class="hero-headline">{{ p.headline }}</p>
+    <ul class="hero-links">
+      <li><a class="btn btn-primary" href="{{ p.cv }}" download>Download CV</a></li>
+      <li><a class="btn" href="{{ p.links.scholar }}">Google Scholar</a></li>
+      <li><a class="btn" href="{{ p.links.github }}">GitHub</a></li>
+      <li><a class="btn" href="{{ p.links.linkedin }}">LinkedIn</a></li>
+    </ul>
+  </div>
+  <ul class="hero-legend" aria-label="What the map shows">
+    <li><svg viewBox="0 0 26 16" aria-hidden="true"><path class="lg-line" d="M1 12c5-9 10 3 14-4s8-4 10-5"/><path class="lg-line" opacity=".5" d="M1 15c6-8 11 2 15-3s7-3 9-4"/></svg>Groundwater level</li>
+    <li><svg viewBox="0 0 26 16" aria-hidden="true"><circle class="lg-field" cx="8" cy="8" r="7"/><rect class="lg-field" x="17" y="1" width="8" height="14"/></svg>Irrigated fields</li>
+    <li><svg viewBox="0 0 26 16" aria-hidden="true"><path class="lg-river" d="M1 12c6-1 7-8 13-8s7 5 11 3"/></svg>River and irrigation canals</li>
+    <li><svg viewBox="0 0 26 16" aria-hidden="true"><circle class="lg-water" cx="13" cy="8" r="8.5"/><path class="lg-ink" style="fill:none" d="M8 14h9M11 14V4M11 6h6v3M11 4l-4-2"/></svg>Groundwater pump</li>
+    <li><svg viewBox="0 0 26 16" aria-hidden="true"><rect class="lg-panel" x="1" y="5" width="8" height="6"/><rect class="lg-ink" x="10" y="4" width="6" height="8"/><rect class="lg-panel" x="17" y="5" width="8" height="6"/></svg>Satellite pass</li>
+    <li><svg viewBox="0 0 26 16" aria-hidden="true"><path class="lg-ink" d="M8 3l10 10M18 3L8 13"/><circle class="lg-ink" cx="8" cy="3" r="2.6"/><circle class="lg-ink" cx="18" cy="3" r="2.6"/><circle class="lg-ink" cx="8" cy="13" r="2.6"/><circle class="lg-ink" cx="18" cy="13" r="2.6"/></svg>Drone survey</li>
+    <li><svg viewBox="0 0 26 16" aria-hidden="true"><circle class="lg-phys" cx="13" cy="8" r="8.5"/><path class="lg-ink" d="M13 14V7M10 14h6"/><circle class="lg-ink" cx="13" cy="5" r="2.2"/></svg>Field sensors</li>
+    <li><svg viewBox="0 0 26 16" aria-hidden="true"><rect class="lg-phys" x="0" y="0" width="26" height="16" rx="3"/><rect class="lg-ink" x="9" y="5" width="8" height="9"/><rect class="lg-wet" x="9.6" y="10" width="6.8" height="3.4"/><path class="lg-ink" d="M4 2l4 4M18 6l4-4"/></svg>Physics-based model</li>
+    <li><svg viewBox="0 0 26 16" aria-hidden="true"><rect class="lg-mlbg" x="-1" y="-1" width="28" height="18" rx="3"/><path class="lg-line" opacity=".6" d="M3 3l10 5M3 3l10 -1M3 13l10 -5M3 13l10 5M13 2l10 6M13 8l10 0M13 14l10 -6M3 8l10 -6M3 8l10 6"/><circle class="lg-ink" cx="3" cy="3" r="2.2"/><circle class="lg-ink" cx="3" cy="13" r="2.2"/><circle class="lg-ink" cx="13" cy="2" r="2.2"/><circle class="lg-ink" cx="13" cy="8" r="2.2"/><circle class="lg-ink" cx="13" cy="14" r="2.2"/><circle class="lg-ink" cx="23" cy="8" r="2.2"/></svg>Machine learning model</li>
+    <li><svg viewBox="0 0 26 16" aria-hidden="true"><rect class="lg-dry" x="1" y="4" width="7" height="7"/><rect class="lg-mid" x="9.5" y="4" width="7" height="7"/><rect class="lg-wet" x="18" y="4" width="7" height="7"/></svg>AI water-use estimate</li>
+    <li class="hover-only"><svg viewBox="0 0 26 16" aria-hidden="true"><circle class="lg-line" cx="13" cy="8" r="7" opacity=".5"/><circle class="lg-line" cx="13" cy="8" r="4"/><circle class="lg-dot" cx="13" cy="8" r="1.6"/></svg>Your cursor pumps a well</li>
+  </ul>
+</header>
+
+<main>
+
+  <section class="sec" id="about">
+    <h2 class="sec-title">About</h2>
+    <div class="sec-body about">
+      <div class="about-bio prose">{{ p.bio | markdownify }}</div>
+      <div class="about-side">
+        <h3 class="minor">Interests</h3>
+        <ul class="plain">
+          {% for i in p.interests %}<li>{{ i }}</li>{% endfor %}
+        </ul>
+        <h3 class="minor">Based in</h3>
+        <p>{{ p.location }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="research">
+    <h2 class="sec-title">Research</h2>
+    <div class="sec-body">
+      {% for t in site.data.research %}{% if t.image %}
+      <article class="feature">
+        <figure class="feature-fig">
+          <img src="assets/img/research/{{ t.image }}" alt="{{ t.caption | default: t.title }}" loading="lazy">
+          {% if t.caption %}<figcaption>{{ t.caption }}</figcaption>{% endif %}
+        </figure>
+        <div class="feature-text">
+          <h3 class="theme-title">{{ t.title }}</h3>
+          <p class="theme-where">{{ t.where }}</p>
+          <p>{{ t.summary }}</p>
+          {% if t.links %}<p class="links">{% for l in t.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</p>{% endif %}
+        </div>
+      </article>
+      {% endif %}{% endfor %}
+      <div class="themes">
+        {% for t in site.data.research %}{% unless t.image %}
+        <article class="theme">
+          <h3 class="theme-title">{{ t.title }}</h3>
+          <p class="theme-where">{{ t.where }}</p>
+          <p>{{ t.summary }}</p>
+          {% if t.links %}<p class="links">{% for l in t.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</p>{% endif %}
+        </article>
+        {% endunless %}{% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="experience">
+    <h2 class="sec-title">Experience</h2>
+    <div class="sec-body">
+      <ol class="timeline">
+        {% for e in site.data.experience %}
+        <li class="tl-item{% if e.current %} is-current{% endif %}">
+          <p class="tl-dates">{{ e.dates }}</p>
+          <div class="tl-body">
+            <h3 class="tl-role">{{ e.role }}</h3>
+            <p class="tl-org">{{ e.org }}{% if e.note %}<span class="tl-note">{{ e.note }}</span>{% endif %}</p>
+            {% if e.bullets and e.bullets.size > 0 %}
+            <ul class="tl-points">
+              {% for b in e.bullets %}<li>{{ b }}</li>{% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+
+      <h3 class="sub-title">Education</h3>
+      <ul class="edu">
+        {% for d in site.data.education %}
+        <li>
+          <p class="edu-years">{{ d.years }}</p>
+          <div>
+            <p class="edu-degree">{{ d.degree }}</p>
+            <p class="edu-school">{{ d.school }}{% if d.detail %}<span class="edu-detail">{{ d.detail }}</span>{% endif %}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="publications">
+    <h2 class="sec-title">Publications</h2>
+    <div class="sec-body">
+      <ol class="pubs">
+        {% for pub in site.data.publications.papers %}
+        <li class="pub">
+          <p class="pub-year">{{ pub.year }}</p>
+          <div>
+            <h3 class="pub-title"><a href="{{ pub.url }}">{{ pub.title }}</a></h3>
+            <p class="pub-authors">{{ pub.authors | replace: p.citation_name, bold_name }}</p>
+            <p class="pub-venue"><em>{{ pub.journal }}</em>{% if pub.details %}, {{ pub.details }}{% endif %}</p>
+            <p class="links">
+              <a href="{{ pub.url }}">Read the paper</a>
+              {% if pub.code %}<a href="{{ pub.code }}">Code</a>{% endif %}
+              {% if pub.press %}<a href="{{ pub.press }}">Press coverage</a>{% endif %}
+            </p>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+      <p class="pubs-more">Full list and citations on <a href="{{ p.links.scholar }}">Google Scholar</a>.</p>
+
+      <h3 class="sub-title">Selected talks</h3>
+      <ul class="talks">
+        {% for t in site.data.publications.talks %}
+        <li><span class="talk-year">{{ t.year }}</span><span><span class="talk-title">{{ t.title }}</span><span class="talk-event">{{ t.event }}</span></span></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="code">
+    <h2 class="sec-title">Code and data</h2>
+    <div class="sec-body">
+      <ul class="repos">
+        {% for r in site.data.projects %}
+        <li>
+          <a class="repo" href="{{ r.url }}">
+            <span class="repo-kind">{{ r.kind }}</span>
+            <span class="repo-name">{{ r.name }}</span>
+            <span class="repo-desc">{{ r.description }}</span>
+            <span class="repo-tech">{{ r.tech }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="pubs-more">More on <a href="{{ p.links.github }}">GitHub</a>.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="skills">
+    <h2 class="sec-title">Skills</h2>
+    <div class="sec-body">
+      <dl class="skills">
+        {% for s in site.data.skills %}
+        <div><dt>{{ s.group }}</dt><dd>{{ s.items | join: ", " }}</dd></div>
+        {% endfor %}
+      </dl>
+    </div>
+  </section>
+
+  {% if site.data.earlier_work %}
+  <section class="sec earlier" id="earlier-work" aria-label="Earlier work">
+    <h2 class="sec-title">Earlier work</h2>
+    <div class="sec-body">
+      <details class="earlier-box">
+        <summary>Water resources work in Bangladesh <span class="earlier-count">before graduate school, up to 2020</span></summary>
+        <ol class="ew-timeline">
+          {% for e in site.data.earlier_work %}
+          <li class="ew-item">
+            <p class="ew-dates">{{ e.dates }}</p>
+            <div class="ew-body">
+              <p class="ew-role">{{ e.role }}</p>
+              <p class="ew-org">{{ e.org }}</p>
+              {% if e.summary %}<p class="earlier-desc">{{ e.summary }}</p>{% endif %}
+              {% if e.projects %}
+              <ul class="ew-projects">
+                {% for w in e.projects %}
+                <li class="ew-project{% if w.image %} has-img{% endif %}">
+                  {% if w.image %}<img src="assets/img/earlier/{{ w.image }}" alt="{{ w.title }}" loading="lazy">{% endif %}
+                  <div>
+                    <p class="earlier-title">{{ w.title }}</p>
+                    {% if w.tools %}<p class="earlier-meta">{{ w.tools }}</p>{% endif %}
+                    <p class="earlier-desc">{{ w.description }}</p>
+                  </div>
+                </li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </div>
+          </li>
+          {% endfor %}
+        </ol>
+      </details>
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="sec contact" id="contact">
+    <h2 class="sec-title">Contact</h2>
+    <div class="sec-body">
+      <p class="contact-lead">The fastest way to reach me is email.</p>
+      <p class="contact-email"><a href="mailto:{{ p.email }}">{{ p.email }}</a></p>
+      <ul class="hero-links">
+        <li><a class="btn btn-primary" href="{{ p.cv }}" download>Download CV</a></li>
+        <li><a class="btn" href="{{ p.links.linkedin }}">LinkedIn</a></li>
+        <li><a class="btn" href="{{ p.links.scholar }}">Google Scholar</a></li>
+        <li><a class="btn" href="{{ p.links.github }}">GitHub</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© {{ site.time | date: "%Y" }} {{ p.name }}</p>
+  <p>Last updated {{ site.time | date: "%B %Y" }}</p>
+</footer>

@@ -1,0 +1,51 @@
+# ─────────────────────────────────────────────────────────────
+#  EXPERIENCE  (newest first; the page shows them in this order)
+#  To add a job: copy one whole block (from "- role:" to its last
+#  bullet), paste it at the top, and edit it.
+#  "bullets" is optional; use  bullets: []  for none.
+# ─────────────────────────────────────────────────────────────
+
+- role: "Agricultural Data Scientist"
+  org: "Syngenta Group"
+  dates: "Sep 2026 – Present"
+  current: true
+  bullets: []
+
+- role: "Graduate Research Assistant"
+  org: "Remote Sensing Hydrology Group, Colorado State University"
+  dates: "Aug 2022 – Aug 2026"
+  note: "NASA project"
+  bullets:
+    - "Developed a physics-constrained machine learning model to estimate effective precipitation over irrigated land in the western U.S."
+    - "Built end-to-end pipelines combining satellite and in-situ data to predict groundwater pumping with process-based and deep learning models."
+    - "Processed large datasets in Google Earth Engine across 17 states and deployed automated geospatial workflows on HPC."
+
+- role: "Agricultural Systems Data Science Co-op"
+  org: "Syngenta Group"
+  dates: "May 2025 – Aug 2025"
+  bullets:
+    - "Developed and validated a Two-Source Energy Balance (TSEB) model from ~3 cm drone thermal, NIR and RGB imagery to map evapotranspiration."
+    - "Deployed field sensors (Sentek, Watermark, Phytech, Davis weather stations, LI-600) and combined them with modeled ET to compare water use efficiency across soil treatments."
+    - "Built a modular Python pipeline that scaled TSEB from small plots to the whole farm."
+
+- role: "Vegetable R&D Data Science Intern"
+  org: "Bayer Crop Science"
+  dates: "May 2023 – Aug 2023"
+  bullets:
+    - "Built a machine and deep learning framework to downscale weather data such as temperature and precipitation."
+    - "Assembled a harmonized, analysis-ready dataset of weather, soil and elevation in AWS, using BigQuery and H3 spatial indexing."
+
+- role: "Graduate Research Assistant"
+  org: "Missouri University of Science and Technology"
+  dates: "Jan 2021 – Jul 2022"
+  note: "NGA and USGS projects"
+  bullets:
+    - "Built a machine learning model that maps land subsidence globally from InSAR and other satellite data."
+    - "Co-developed input features for the USGS AIWUM 2.0 groundwater use model, linking wells to fields with KD-trees."
+
+- role: "Assistant Engineer"
+  org: "Bangladesh Water Development Board"
+  dates: "Oct 2018 – Dec 2020"
+  bullets:
+    - "Supervised field operations for water resources projects and supported budget planning."
+    - "Contributed to implementation and policy review of the Ganges Water Sharing Treaty."

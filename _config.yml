@@ -1,0 +1,8 @@
+# Site settings. You normally never need to change this file.
+title: "Md Fahim Hasan"
+markdown: kramdown
+exclude:
+  - README.md
+  - HOW-TO-EDIT.md
+  - Gemfile
+  - Gemfile.lock

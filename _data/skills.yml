@@ -1,0 +1,21 @@
+# ─────────────────────────────────────────────────────────────
+#  SKILLS  (group name, then a list of items)
+# ─────────────────────────────────────────────────────────────
+
+- group: "Programming"
+  items: ["Python", "R"]
+
+- group: "Machine and deep learning"
+  items: ["scikit-learn", "PyTorch"]
+
+- group: "Geospatial"
+  items: ["Rasterio", "GDAL", "GeoPandas", "ArcGIS Pro", "QGIS"]
+
+- group: "Cloud and HPC"
+  items: ["Google Earth Engine", "AWS SageMaker", "Google BigQuery", "Linux", "HPC"]
+
+- group: "Hydrologic modeling"
+  items: ["TSEB", "SWAT", "HEC-RAS"]
+
+- group: "Tools"
+  items: ["Git, GitHub, GitLab", "JupyterLab", "PyCharm", "Posit Workbench"]

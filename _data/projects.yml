@@ -1,0 +1,34 @@
+# ─────────────────────────────────────────────────────────────
+#  CODE & DATA  (shown in the "Code and data" section, in this order)
+#  "kind" is a short word shown on the item, e.g. Code, Dataset.
+# ─────────────────────────────────────────────────────────────
+
+- name: "WestUS_Peff"
+  kind: "Code"
+  description: "Physics-constrained effective precipitation model for the western U.S.: monthly, ~2 km, 2000–2020."
+  tech: "Python, scikit-learn, Google Earth Engine"
+  url: "https://github.com/mdfahimhasan/WestUS_Peff"
+
+- name: "WestUS_pumping"
+  kind: "Code"
+  description: "Groundwater pumping prediction for the western U.S. from satellite and in-situ data."
+  tech: "Python, machine and deep learning"
+  url: "https://github.com/mdfahimhasan/WestUS_pumping"
+
+- name: "Global-Subsidence-Groundwater"
+  kind: "Code"
+  description: "Machine learning model that maps global land subsidence at ~2 km and estimates aquifer storage loss, from the Nature Communications study. Outputs are on HydroShare and in Earth Engine."
+  tech: "Python, scikit-learn, InSAR"
+  url: "https://github.com/mdfahimhasan/Global-Subsidence-Groundwater"
+
+- name: "SWB_ETa_Irr"
+  kind: "Code"
+  description: "Soil water balance model that estimates actual crop evapotranspiration, soil water deficit and deep percolation with the FAO-56 dual crop coefficient method, and recommends irrigation schedules."
+  tech: "Python, pandas, FAO-56"
+  url: "https://github.com/mdfahimhasan/SWB_ETa_Irr"
+
+- name: "climate_downscale"
+  kind: "Code"
+  description: "Machine and deep learning framework that downscales daily weather data from 28 km to 4 km and builds analysis-ready weather, soil and elevation datasets for environmental clustering."
+  tech: "Python, scikit-learn, PyTorch"
+  url: "https://github.com/mdfahimhasan/climate_downscale"
