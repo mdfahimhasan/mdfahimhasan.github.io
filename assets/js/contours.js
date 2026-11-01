@@ -658,14 +658,19 @@
   function frame(ts) {
     if (!running) return;
     var dt = Math.min(0.05, (ts - (last || ts)) / 1000); last = ts;
-    clock += dt; drift += dt * 0.045;
+    clock += dt; if (!banner) drift += dt * 0.045;
     well.x += (well.tx - well.x) * Math.min(1, dt * 6);
     well.y += (well.ty - well.y) * Math.min(1, dt * 6);
     well.depth += (well.target - well.depth) * Math.min(1, dt * 2.5);
     draw();
     requestAnimationFrame(frame);
   }
-  function start() { if (!running && !reduce && visible && !document.hidden) { running = true; last = 0; requestAnimationFrame(frame); } }
+  window.heroStep = function (dt) {        // used only to export banner frames
+    clock += dt; if (!banner) drift += dt * 0.045;
+    well.depth += (well.target - well.depth) * Math.min(1, dt * 2.5);
+    draw();
+  };
+  function start() { if (window.HERO_MANUAL) return; if (!running && !reduce && visible && !document.hidden) { running = true; last = 0; requestAnimationFrame(frame); } }
   function stop() { running = false; }
 
   readColors(); resize();
